@@ -1,0 +1,9 @@
+*.stash
+*.db
+*.vcxproj
+*.opendb
+build/windows/debug
+build/windows/release
+*.filters
+build/windows/target_wrapper.bat
+build/windows/CuteGedcom_resource.rc
