@@ -9,3 +9,4 @@ build/windows/release
 *.filters
 build/windows/target_wrapper.bat
 build/windows/CuteGedcom_resource.rc
+build/windows/CuteGedcom.sln
