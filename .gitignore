@@ -2,6 +2,8 @@
 *.db
 *.vcxproj
 *.opendb
+build/windows/src
+build/windows/test
 build/windows/debug
 build/windows/release
 *.filters

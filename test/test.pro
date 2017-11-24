@@ -13,10 +13,10 @@ HEADERS += testcutegedcom.h
 INCLUDEPATH += ../src
 
 CONFIG(debug, debug|release) {
-    LIBS += -L./debug -lCuteGedcom0
-    PRE_TARGETDEPS += ./debug/CuteGedcom0.dll
+    LIBS += -L../src/debug -lCuteGedcom0
+    PRE_TARGETDEPS += ../src/debug/CuteGedcom0.dll
 }
 else {
-    LIBS += -L./release -lCuteGedcom0
-    PRE_TARGETDEPS += ./release/CuteGedcom0.dll
+    LIBS += -L../src/release -lCuteGedcom0
+    PRE_TARGETDEPS += ../src/release/CuteGedcom0.dll
 }
