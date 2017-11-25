@@ -1,5 +1,5 @@
 /**
-* Copyright 2017 Charles Glancy
+* Copyright 2017 Charles Glancy (charles@glancyfamily.net)
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation
 * files (the "Software"), to deal in the Software without restriction, including  without limitation the rights to use, copy,
@@ -13,8 +13,9 @@
 * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-#ifndef GEDCOMNODE_H
-#define GEDCOMNODE_H
+#ifndef CUTEGEDCOM_GEDCOMNODE_H
+#define CUTEGEDCOM_GEDCOMNODE_H
+#pragma once
 
 #include "cutegedcom.h"
 #include <QString>
@@ -44,4 +45,4 @@ namespace CuteGedcom
     };
 }
 
-#endif // GEDCOMNODE_H
+#endif // CUTEGEDCOM_GEDCOMNODE_H
