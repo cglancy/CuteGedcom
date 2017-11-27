@@ -18,7 +18,7 @@
 #define IsAnselCombiner(c)  (((c) >= 0xE0) && ((c) <= 0xFF))
 #define QValidChar(u)   ((u) ? QChar((ushort)(u)) : QChar(QChar::ReplacementCharacter))
 
-namespace CuteGedcom
+namespace cg
 {
     AnselCodec::AnselCodec()
         : QTextCodec()

@@ -13,24 +13,24 @@
  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-#ifndef CUTEGEDCOM_H
-#define CUTEGEDCOM_H
+#ifndef CGGEDCOM_H
+#define CGGEDCOM_H
 #pragma once
 
 #include <QtGlobal>
 
 #ifdef Q_OS_WIN32
 
-#ifdef CUTEGEDCOM_EXPORTS
-#define CUTEGEDCOM_API __declspec(dllexport)
+#ifdef CGGEDCOM_EXPORTS
+#define CGGEDCOM_API __declspec(dllexport)
 #else
-#define CUTEGEDCOM_API __declspec(dllimport)
+#define CGGEDCOM_API __declspec(dllimport)
 #endif
 
 #else
 
-#define CUTEGEDCOM_API __attribute__((visibility("default")))
+#define CGGEDCOM_API __attribute__((visibility("default")))
 
 #endif
 
-#endif // CUTEGEDCOM_H
+#endif // CGGEDCOM_H

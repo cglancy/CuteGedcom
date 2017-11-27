@@ -13,26 +13,26 @@
 * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-#include "testcutegedcom.h"
+#include "GedcomTest.h"
 #include "anselcodec.h"
 #include "gedcomparser.h"
 
 #include <QtTest/QtTest>
 
-using namespace CuteGedcom;
+using namespace cg;
 
-QTEST_MAIN(TestCuteGedcom);
+QTEST_MAIN(GedcomTest);
 
-void TestCuteGedcom::initTestCase()
+void GedcomTest::initTestCase()
 {
     _pTextCodec = new AnselCodec();
 }
 
-void TestCuteGedcom::cleanupTestCase()
+void GedcomTest::cleanupTestCase()
 {
 }
 
-void TestCuteGedcom::testAnselAscii()
+void GedcomTest::testAnselAscii()
 {
     QByteArray asciiStr;
     for (uchar uc = 1; uc < 0x80; uc++)
@@ -46,7 +46,7 @@ void TestCuteGedcom::testAnselAscii()
     QCOMPARE(rtStr, asciiStr);
 }
 
-void TestCuteGedcom::testAnselNonAscii()
+void GedcomTest::testAnselNonAscii()
 {
     QByteArray anselStr1 = "\xa1\xa2\xa3\xa4\xa5\xa6\xa7\xa8\xa9\xaa\xab\xac\xad\xae";
     QByteArray anselStr2 = "\xb0\xb1\xb2\xb3\xb4\xb5\xb6\xb7\xb8\xb9\xba\xbc\xbd";
@@ -80,7 +80,7 @@ void TestCuteGedcom::testAnselNonAscii()
     QCOMPARE(rtStr, gedcomExpectedStr);
 }
 
-void TestCuteGedcom::testAnselCombiningDiacritics()
+void GedcomTest::testAnselCombiningDiacritics()
 {
     QByteArray anselStr1 = "\xE0\x41";
 
@@ -92,11 +92,11 @@ void TestCuteGedcom::testAnselCombiningDiacritics()
     QCOMPARE(rtStr, anselStr1);
 }
 
-void TestCuteGedcom::testParser()
+void GedcomTest::testParser()
 {
     GedcomParser parser;
     QString encoding;
-    QString dataDir = qgetenv("CUTEGEDCOM_DATA_DIR");
+    QString dataDir = qgetenv("CGGEDCOM_DATA_DIR");
 
     // Kennedy Family
     QString kennedyFile = dataDir + "\\The Kennedy Family.ged";

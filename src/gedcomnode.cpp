@@ -15,7 +15,7 @@
 */
 #include "gedcomnode.h"
 
-namespace CuteGedcom
+namespace cg
 {
     GedcomNode::GedcomNode()
         : _tag("GEDCOM")

@@ -25,7 +25,7 @@
 #include <QDebug>
 #include <QStack>
 
-namespace CuteGedcom
+namespace cg
 {
     GedcomParser::GedcomParser()
         : _rootNode(nullptr)

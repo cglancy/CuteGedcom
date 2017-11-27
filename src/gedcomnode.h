@@ -13,17 +13,17 @@
 * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-#ifndef CUTEGEDCOM_GEDCOMNODE_H
-#define CUTEGEDCOM_GEDCOMNODE_H
+#ifndef CGGEDCOM_GEDCOMNODE_H
+#define CGGEDCOM_GEDCOMNODE_H
 #pragma once
 
-#include "cutegedcom.h"
+#include "cggedcom.h"
 #include <QString>
 #include <QList>
 
-namespace CuteGedcom
+namespace cg
 {
-    class CUTEGEDCOM_API GedcomNode
+    class CGGEDCOM_API GedcomNode
     {
     public:
         GedcomNode();
@@ -45,4 +45,4 @@ namespace CuteGedcom
     };
 }
 
-#endif // CUTEGEDCOM_GEDCOMNODE_H
+#endif // CGGEDCOM_GEDCOMNODE_H

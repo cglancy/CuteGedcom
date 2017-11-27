@@ -1,7 +1,7 @@
-QT       += core
-QT       -= gui
+QT += core
+QT -= gui
 
-TARGET = CuteGedcom
+TARGET = cgGedcom
 CONFIG   += dll
 TEMPLATE = lib
 VERSION	= 0.1.1
@@ -14,7 +14,7 @@ HEADERS += \
     anselcodec.h \
     gedcomnode.h \
     gedcomparser.h \
-    cutegedcom.h
+    cggedcom.h
 
-DEFINES += CUTEGEDCOM_EXPORTS
+DEFINES += CGGEDCOM_EXPORTS
 

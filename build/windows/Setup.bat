@@ -6,8 +6,8 @@ set QMAKESPEC=win32-msvc
 
 call "%VSDIR%\VC\vcvarsall.bat" x64
 
-%QTDIR%\bin\qmake.exe -tp vc -r ../../CuteGedcom.pro
+%QTDIR%\bin\qmake.exe -tp vc -r ../../cgGedcom.pro
 
 set PATH=%PATH%;%QTDIR%\bin;%~dp0\src\debug
 
-devenv CuteGedcom.sln
+devenv cgGedcom.sln

@@ -1,22 +1,22 @@
-QT       += core testlib
-QT       -= gui
+QT += core testlib
+QT -= gui
 
-TARGET = TestCuteGedcom
-CONFIG   += testcase 
+TARGET = cgGedcomTest
+CONFIG += testcase 
 
 TEMPLATE = app
 
-SOURCES += testcutegedcom.cpp
+SOURCES += gedcomtest.cpp
 
-HEADERS += testcutegedcom.h
+HEADERS += gedcomtest.h
 
 INCLUDEPATH += ../src
 
 CONFIG(debug, debug|release) {
-    LIBS += -L../src/debug -lCuteGedcom0
-    PRE_TARGETDEPS += ../src/debug/CuteGedcom0.dll
+    LIBS += -L../src/debug -lcgGedcom0
+    PRE_TARGETDEPS += ../src/debug/cgGedcom0.dll
 }
 else {
-    LIBS += -L../src/release -lCuteGedcom0
-    PRE_TARGETDEPS += ../src/release/CuteGedcom0.dll
+    LIBS += -L../src/release -lcgGedcom0
+    PRE_TARGETDEPS += ../src/release/cgGedcom0.dll
 }

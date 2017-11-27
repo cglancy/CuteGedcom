@@ -13,18 +13,18 @@
 * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-#ifndef CUTEGEDCOM_TESTCUTEGEDCOM_H
-#define CUTEGEDCOM_TESTCUTEGEDCOM_H
+#ifndef CGGEDCOM_GEDCOMTEST_H
+#define CGGEDCOM_GEDCOMTEST_H
 #pragma once
 
 #include <QtCore/QObject>
 
-namespace CuteGedcom
+namespace cg
 {
     class AnselCodec;
 }
 
-class TestCuteGedcom : public QObject
+class GedcomTest : public QObject
 {
     Q_OBJECT
 private slots:
@@ -38,8 +38,8 @@ private slots:
     void testParser();
 
 private:
-    CuteGedcom::AnselCodec *_pTextCodec;
+    cg::AnselCodec *_pTextCodec;
 };
 
-#endif // CUTEGEDCOM_TESTCUTEGEDCOM_H
+#endif // CGGEDCOM_GEDCOMTEST_H
 

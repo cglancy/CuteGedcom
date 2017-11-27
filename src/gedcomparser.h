@@ -13,20 +13,20 @@
 * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-#ifndef CUTEGEDCOM_GEDCOMPARSER_H
-#define CUTEGEDCOM_GEDCOMPARSER_H
+#ifndef CGGEDCOM_GEDCOMPARSER_H
+#define CGGEDCOM_GEDCOMPARSER_H
 #pragma once
 
-#include "cutegedcom.h"
+#include "cggedcom.h"
 #include <QString>
 #include <QMap>
 #include <QList>
 
-namespace CuteGedcom
+namespace cg
 {
     class GedcomNode;
 
-    class CUTEGEDCOM_API GedcomParser
+    class CGGEDCOM_API GedcomParser
     {
     public:
         typedef QList<GedcomNode*> NodeList;
@@ -53,4 +53,4 @@ namespace CuteGedcom
     };
 }
 
-#endif // CUTEGEDCOM_GEDCOMPARSER_H
+#endif // CGGEDCOM_GEDCOMPARSER_H

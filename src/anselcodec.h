@@ -13,16 +13,16 @@
 * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-#ifndef CUTEGEDCOM_ANSELCODEC_H
-#define CUTEGEDCOM_ANSELCODEC_H
+#ifndef CGGEDCOM_ANSELCODEC_H
+#define CGGEDCOM_ANSELCODEC_H
 #pragma once
 
-#include "cutegedcom.h"
+#include "cggedcom.h"
 #include <QTextCodec>
 
-namespace CuteGedcom
+namespace cg
 {
-    class CUTEGEDCOM_API AnselCodec : public QTextCodec
+    class CGGEDCOM_API AnselCodec : public QTextCodec
     {
     public:
         AnselCodec();
@@ -43,4 +43,4 @@ namespace CuteGedcom
     };
 }
 
-#endif // CUTEGEDCOM_ANSELCODEC_H
+#endif // CGGEDCOM_ANSELCODEC_H
